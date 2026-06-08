@@ -1,0 +1,11 @@
+Averages per problem (n_runs = 30)
+==================================================
+
+p1_easy: reward_average=113.666667 | time_average=0.792906s
+e1_easy: reward_average=114.266667 | time_average=3.484351s
+e2_easy: reward_average=38.466667 | time_average=0.217993s
+e3_easy: reward_average=93.633333 | time_average=1.485852s
+Averages per problem (n_runs = 30)
+==================================================
+
+p1_easy: reward_average=122.766667 | time_average=1.916298s
