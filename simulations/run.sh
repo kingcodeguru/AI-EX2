@@ -6,10 +6,11 @@ cd ../../
 
 cp original/*.py bin/
 cp my/versions/${ver} bin/ex2.py
+cp simulations/ex2_gui.py bin/
 
 
 
 # run
 
 cd bin
-python3 ex2_check.py
+python3 ex2_gui.py
