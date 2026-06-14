@@ -321,7 +321,7 @@ def main():
         print(f"\n[{name}] avg reward over {n_runs} runs: {avg_reward:.3f} "
               f"(avg time {avg_time:.4f}s)\n")
 
-        with open(out_file, "w", encoding="utf-8") as f:
+        with open(out_file, "a", encoding="utf-8") as f:
             f.write(f"{name}: reward_average={avg_reward:.6f} | "
                     f"time_average={avg_time:.6f}s\n")
 

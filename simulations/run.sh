@@ -1,8 +1,7 @@
 #!/bin/bash
 ver=$1
 cd "$(dirname "$0")" || exit 1
-cd ../../
-
+cd ../
 
 cp original/*.py bin/
 cp my/versions/${ver} bin/ex2.py

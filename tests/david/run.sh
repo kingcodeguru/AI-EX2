@@ -5,6 +5,7 @@ cd ../../
 
 
 cp original/*.py bin/
+cp tests/david/ex2_check.py bin/
 cp my/versions/${ver} bin/ex2.py
 
 

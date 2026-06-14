@@ -1,34 +1,38 @@
 import pygame
 import ext_elev
-import ex2_random as student   # swap to "import ex2 as student" to drive with your controller
+import ex2 as student   # swap to "import ex2 as student" to drive with your controller
 from enum import Enum
+import ex2_check as problems
 
 
 # ---------------------------------------------------------------- #
 # Problem                                                          #
 # ---------------------------------------------------------------- #
-problem = {
-    "height": 6,
-    "Elevators": {
-        0: (0, (0, 1, 2, 3), 8),
-        1: (4, (2, 4, 5, 6), 10),
-    },
-    "Persons": {
-        10: (0, 3, 3),
-        11: (2, 4, 6),
-        12: (4, 5, 0),
-    },
-    "elevator_chosen_action_prob": {0: 0.8, 1: 0.7},
-    "person_chosen_action_prob":   {10: 0.9, 11: 0.6, 12: 0.85},
-    "persons_reward": {
-        10: [2, 3, 6, 10],
-        11: [1, 5, 6, 10],
-        12: [3, 4, 8, 12],
-    },
-    "goal_reward": 30,
-    "seed": 0,
-    "horizon": 40,
-}
+problem = problems.problem_e4_med
+problem["seed"] = 0
+
+# {
+#     "height": 6,
+#     "Elevators": {
+#         0: (0, (0, 1, 2, 3), 8),
+#         1: (4, (2, 4, 5, 6), 10),
+#     },
+#     "Persons": {
+#         10: (0, 3, 3),
+#         11: (2, 4, 6),
+#         12: (4, 5, 0),
+#     },
+#     "elevator_chosen_action_prob": {0: 0.8, 1: 0.7},
+#     "person_chosen_action_prob":   {10: 0.9, 11: 0.6, 12: 0.85},
+#     "persons_reward": {
+#         10: [2, 3, 6, 10],
+#         11: [1, 5, 6, 10],
+#         12: [3, 4, 8, 12],
+#     },
+#     "goal_reward": 30,
+#     "seed": 0,
+#     "horizon": 40,
+# }
 
 # ---------------------------------------------------------------- #
 # Pygame setup                                                     #

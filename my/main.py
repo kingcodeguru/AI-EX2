@@ -17,7 +17,7 @@ def run(version, scripts):
 
 def run_simulation(version):
     print("What simulation do you want to run?")
-    simulations = [('David', './simulations/david/run.sh')]
+    simulations = [('David', './simulations/run.sh')]
     run(version, simulations)
 
 def run_test(version):
